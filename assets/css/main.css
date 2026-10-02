@@ -3806,7 +3806,11 @@ input, select, textarea {
 			-ms-object-position: right;
 			object-position: right;
 		}
-
+.about-section .content {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+}
 /* Banner (style3) */
 
 	.banner.style3 {
@@ -7209,6 +7213,35 @@ input, select, textarea {
 	.gallery article .image {
 		background-color: rgba(0, 0, 0, 0.125);
 	}
+
+.modal .caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.65);
+	padding: 0.5rem 1rem;
+	font-size: 3rem;
+	text-align: center;
+	white-space: nowrap;
+	z-index: 10;
+}
+
+/* Mobile */
+@media screen and (max-width: 736px) {
+
+	.modal .caption {
+		font-size: 1.2rem;
+		padding: 0.4rem 0.75rem;
+		width: auto;
+		max-width: 90%;
+		white-space: normal;
+		line-height: 1.3;
+	}
+
+}
+
 
 /* Wrapper (style1) */
 
