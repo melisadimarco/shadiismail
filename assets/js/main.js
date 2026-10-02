@@ -250,11 +250,18 @@
 						$modal[0]._locked = true;
 
 					// Set src.
-						$modalImg.attr('src', href);
+$modalImg.attr('src', href);
 
-					// Set visible.
-						$modal.addClass('visible');
+// Set caption.
+var caption = $a.siblings('.caption').find('p').text();
 
+$modal.find('.caption').remove();
+
+if (caption)
+	$modal.find('.inner').append('<div class="caption">' + caption + '</div>');
+
+// Set visible.
+$modal.addClass('visible');
 					// Focus.
 						$modal.focus();
 
@@ -318,8 +325,7 @@
 							$modal.trigger('click');
 
 				})
-				.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /></div></div>')
-					.find('img')
+.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /></div></div>')					.find('img')
 						.on('load', function(event) {
 
 							var $modalImg = $(this),
