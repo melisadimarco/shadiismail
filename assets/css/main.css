@@ -8671,3 +8671,31 @@ input, select, textarea {
     }
 }
 
+/* =========================================================
+   Support by country - Mobile
+   ========================================================= */
+
+@media screen and (max-width: 736px) {
+
+    .items.style1.medium {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .items.style1.medium > section {
+        width: 100% !important;
+        margin: 0 0 2rem 0;
+        padding: 2rem 1.5rem;
+    }
+
+}
+
+.binance-qr {
+    display: block;
+    width: 220px !important;
+    max-width: 70%;
+    height: auto;
+    margin: 1.5rem auto;
+}
+
