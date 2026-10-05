@@ -8699,3 +8699,46 @@ input, select, textarea {
     margin: 1.5rem auto;
 }
 
+.items.style1.medium h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    letter-spacing: 0.02em;
+}
+/* =========================================
+   ITEMS - MOBILE
+   ========================================= */
+@media screen and (max-width: 736px) {
+
+	.support-items {
+		display: block;
+		border: 0 !important;
+	}
+
+	.support-items > section {
+		width: 100% !important;
+		border-left: 0 !important;
+		border-right: 0 !important;
+		border-bottom: 0 !important;
+		padding: 2rem 0 !important;
+		margin: 0 !important;
+	}
+
+	.support-items > section + section {
+		border-top: 1px solid rgba(0, 0, 0, 0.15) !important;
+	}
+
+	.support-items h3 {
+		font-weight: 800;
+		margin-bottom: 1rem;
+	}
+
+	.support-items p {
+		margin-bottom: 1.5rem;
+	}
+
+	.support-items .button {
+		margin-bottom: 0.75rem;
+	}
+
+}
