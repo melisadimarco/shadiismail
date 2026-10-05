@@ -8742,3 +8742,19 @@ input, select, textarea {
 	}
 
 }
+
+/* Botones de la sección Items - versión mobile */
+@media screen and (max-width: 736px) {
+
+	.support-items section {
+		text-align: center;
+	}
+
+	.support-items .button.fit {
+		display: block;
+		width: auto;
+		max-width: 280px;
+		margin: 0.75rem auto;
+	}
+
+}
